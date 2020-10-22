@@ -2,6 +2,3 @@
 
 ### Resources
 sai-byui.github.io
-
-### Projects
-Self Driving Car
