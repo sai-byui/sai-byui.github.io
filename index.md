@@ -1,8 +1,7 @@
 ## About
 All the projects that the society's members work on is public. The repositories are located [here](https://github.com/sai-byui). Currently our meetings are held in the STC 385 Tuesdays and Thursdays @ 6pm
 
-## Projects
-### Spring 2019
+## Current Projects
 
 #### Autonomous Remote Control Car
 An RC car is made to recognize it's surroundings through a machine learning image regocnition algorithm. A Raspberry Pi 3 is used to control to car. The source code and the wiki can be found in the [repository](https://github.com/sai-byui/arcc).
