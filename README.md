@@ -1,2 +1,3 @@
-# sai-byui.github.io
-SAI-BYUI website
+# Society of Artificial Intelligence - BYU-I
+### Projects
+Self Driving Car
