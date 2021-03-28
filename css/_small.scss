@@ -1,3 +1,55 @@
+* {
+    box-sizing: border-box;
+  }
 body {
     margin: 0;
+    // to use hsl in color schemes, add 180 to h. to use a triad, add 120 and subtract 120.
+    background: hsl(0, 0%, 95%);
+    // color: hsl(167, 67%, 21%);
+    min-height: 100%;
+}
+
+header {
+    background: rgb(42,42,42);
+    background: linear-gradient(180deg, rgba(42,42,42,1) 0%, rgba(56,56,56,1) 100%);
+    margin: 0;
+    padding:10px;
+    display:grid;
+    grid-template-columns: max-content auto;
+    a {
+        text-decoration: none;
+        color: hsl(1, 0%, 80%)
+    }
+    nav ul {
+        display: flex;
+        width: 80%;
+        margin: 25px 0 0 0; // how close nav is to top
+        li {
+            list-style-type: none;
+            min-width: max-content;
+            min-height: 35px;
+            margin: 0 10px;
+            font-size: 1.2em;
+            text-align: center;
+        }
+    }
+}
+
+main {
+    padding: 20px;
+}
+
+footer {
+    position:fixed; // TODO: Replace with this: https://stackoverflow.com/questions/18739937/how-to-keep-footer-at-bottom-of-screen
+    width: 100%;
+    bottom: 0;
+    padding: 5px 10px;
+    background: rgb(42,42,42);
+    background: linear-gradient(180deg, rgba(42,42,42,1) 0%, rgba(56,56,56,1) 100%);
+    margin: 0;
+    text-align: center;
+    p {
+        margin: 0;
+        color: hsl(1, 0%, 60%);
+    }
 }
