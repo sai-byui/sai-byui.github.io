@@ -14,5 +14,4 @@ Neo is an agent designed to interact and learn from objects in its environment. 
 
   
 ### Contact
-
 For more information, please contact sofai.byui@gmail.com
