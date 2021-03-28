@@ -1,5 +1,5 @@
 ## About
-All the projects that the society's members work on is public. The repositories are located [here](https://github.com/sai-byui). Currently our meetings are held in the STC 385 Tuesdays and Thursdays @ 6pm
+All the projects that the society's members work on is public. The repositories are located [here](https://github.com/sai-byui). Currently our meetings are held Thursdays @ 6pm on Zoom.
 
 ## Current Projects
 
