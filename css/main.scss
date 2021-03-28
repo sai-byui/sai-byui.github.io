@@ -1,0 +1,10 @@
+@import "_small.scss";
+
+@media only screen and (min-width: 800px) {
+    @import "_large.scss";
+}
+
+@media only screen and (min-width: 400px) {
+    @import "_medium.scss";
+}
+
