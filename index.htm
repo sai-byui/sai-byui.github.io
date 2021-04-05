@@ -5,65 +5,68 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/main.css">
+    <script src="js/dropdown-menu.js"></script>
     <title>SAI BYUI</title>
 </head>
 <body>
     <header>
-        <div>
-            <a href="index.htm">
-                <!-- <img src="logo"> -->
-                <h2>Society of AI: BYU-I</h2>
-            </a>
-        </div>
+        <a href="index.htm">
+            <!-- <img src="logo"> -->
+            <h2>Society of AI: BYU-I</h2>
+        </a>
         
-        <nav>
-            <ul>
+        <p id="menu-icon"><a href="#">&Congruent;</a></p>
+            <ul id="navigation"  class="responsive">
                 <li><a href="index.htm">Home</a></li>
-                <li><a href="#">About</a></li>
+                <li><a href="pages/about/about.htm">About</a></li>
                 <li><a href="#">Gallery</a></li>
                 <li><a href="#">How to Join</a></li>
             </ul>
-        </nav>
     </header>
     
     <main>
         <h1>Society of Artificial Intelligence - BYU-I</h1>
 
-        <h2>Resources</h2>
-        <p>sai-byui.github.io</p>
-        
-        <h2>About</h2>
-        <p>
-            All the projects that the society's members work on is public. 
-            The repositories are located <a href="https://github.com/sai-byui">here</a>. 
-            Currently our meetings are held on Thursdays @ 6pm over Zoom.
-        </p>
+        <section>
+            <h2>Contact</h2>
+            <p>For more information, see our page at <a href="https://ibelong.byui.edu/student_community?club_id=47021&menu=about">I-Belong</a></a></p>
+        </section>
 
-        <h2>Current Projects</h2>
-        <h4>Autonomous Remote Control Car</h4>
-        <p>
-            An RC car is made to recognize it's surroundings through a machine learning image regocnition algorithm.
-            A Raspberry Pi 3 is used to control to car. 
-            The source code and the wiki can be found in the <a href="https://github.com/sai-byui/arcc">repository</a>.
-        </p>
-        <h4>Battleship AI </h4>
-        <p>
-            A solid state machine built in C++ to play the game battleship.
-            We currently have 2 versions of an AI developed last semester 
-            and we are looking to improve them and implement other strategies 
-            with the goal of defeting human players. 
-            The code for this project can be found <a href="https://github.com/sai-byui/BattleShipAI">here</a>.
-        </p>
-        <h4>NEO the Learning Softbot</h4>
-        <p>
-            Neo is an agent designed to interact and learn from objects in its environment. 
-            Its framework is built upon concepts in Agent Oriented Programming which allow 
-            its source code to be completely autonomous from the environment 
-            (it can be placed into a new environment without breaking). 
-            The code for this project can be found <a href="https://github.com/sai-byui/NEO_Learning_Softbot">here</a>.
-        </p>
-        <h3>Contact</h3>
-        <p>For more information, please contact <a href="mailto:sofai.byui@gmail.com">sofai.byui@gmail.com</a></p>
+        <section>
+            <h2>Previous Projects</h2>
+            <h4>Autonomous Remote Control Car</h4>
+            <p>
+                An RC car is made to recognize it's surroundings through a machine learning image regocnition algorithm.
+                A Raspberry Pi 3 is used to control to car. 
+                The source code and the wiki can be found in the <a href="https://github.com/sai-byui/arcc">repository</a>.
+            </p>
+            <h4>Battleship AI </h4>
+            <p>
+                A solid state machine built in C++ to play the game battleship.
+                We currently have 2 versions of an AI developed last semester 
+                and we are looking to improve them and implement other strategies 
+                with the goal of defeting human players. 
+                The code for this project can be found <a href="https://github.com/sai-byui/BattleShipAI">here</a>.
+            </p>
+            <h4>NEO the Learning Softbot</h4>
+            <p>
+                Neo is an agent designed to interact and learn from objects in its environment. 
+                Its framework is built upon concepts in Agent Oriented Programming which allow 
+                its source code to be completely autonomous from the environment 
+                (it can be placed into a new environment without breaking). 
+                The code for this project can be found <a href="https://github.com/sai-byui/NEO_Learning_Softbot">here</a>.
+            </p>
+        </section>
+        
+        <section>
+            <h2>Resources</h2>
+            <ul>
+                <li><p><a href="https://github.com/sai-byui">
+                    Society Github</a></p></li>
+                <li><p><a href="https://teams.microsoft.com/_?lm=deeplink&lmsrc=homePageWeb&cmpid=WebSignIn#/school/conversations/General?threadId=19:6d581630bf0044849d9a27fd412ac026@thread.tacv2&ctx=channel">
+                    Society Microsoft Teams</a></p></li>
+            </ul>
+        </section>
     </main>
 
     <footer>

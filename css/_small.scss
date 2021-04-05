@@ -14,25 +14,41 @@ header {
     background: linear-gradient(180deg, rgba(42,42,42,1) 0%, rgba(56,56,56,1) 100%);
     margin: 0;
     padding:10px;
-    display:grid;
-    grid-template-columns: max-content auto;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    // grid-template-columns: max-content auto;
     a {
         text-decoration: none;
-        color: hsl(1, 0%, 80%)
+        color: hsl(1, 0%, 80%);
+        min-width: max-content;
+        margin: 0;
     }
-    nav ul {
+    #menu-icon {
+        font-size: 2.5em;
+        margin: 10px 0 0;
+    }
+    ul {
         display: flex;
+        
+        flex-direction: column;
         width: 80%;
         margin: 25px 0 0 0; // how close nav is to top
+        padding: 0; // moves menu items close to sides
         li {
             list-style-type: none;
             min-width: max-content;
             min-height: 35px;
-            margin: 0 10px;
+            padding-bottom: 20px;
             font-size: 1.2em;
             text-align: center;
-        }
-    }
+        } // end of li
+    } // end of ul
+}
+
+// Responsive menu
+.responsive {
+    display: none;
 }
 
 main {

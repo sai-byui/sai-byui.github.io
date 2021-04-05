@@ -1,0 +1,16 @@
+header {
+    flex-flow: row;
+    #menu-icon { 
+        display: none;
+    }
+    ul {
+        flex-direction: row;
+        justify-content: space-between;
+        margin-left: 20px;
+        max-width: 500px;
+        li {
+            margin: 0 10px;
+        }
+    }
+    ul.responsive { display: flex; }
+}

@@ -1,8 +1,8 @@
 @import "_small";
 
-@media only screen and (min-width: 400) {
+@media only screen and (min-width: 450px) {
     @import "_medium";
 }
-@media only screen and (min-width: 800) {
+@media only screen and (min-width: 800px) {
     @import "_large";
 }
