@@ -14,7 +14,7 @@ window.addEventListener('load', () => {
     for (let i = 0; i < navLinks.length; i++) {
         let lb = navLinks[i].href.split("/");
         if (lb[lb.length-1] == currentPage) {
-            navLinks[i].className = "current";
+            navLinks[i].classList.add("current");
             break;
         }
     }

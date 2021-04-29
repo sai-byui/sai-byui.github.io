@@ -10,8 +10,9 @@ body {
 }
 
 header {
-    background:  rgb(7, 78, 145);
-    background: linear-gradient(180deg, rgb(7, 78, 145) 0%, rgb(16, 95, 170) 100%);
+    
+    background:  hsl(207, 99%, 38%);//rgb(7, 78, 145);
+    background: linear-gradient(180deg, hsl(207, 99%, 38%) 0%, rgb(16, 95, 170) 100%);
     margin: 0;
     padding:10px;
     display:flex;
@@ -23,26 +24,49 @@ header {
         color: rgb(255, 255, 255);
         min-width: max-content;
         margin: 0;
+        
+    }
+    
+    #site-title {
+        display: grid;
+        grid-template-columns: auto auto;
+        gap: 10px;
+        img {
+            display: none;
+        }
+        h2 {
+            margin: 0;
+            margin-top: 11px;
+        }
     }
     #menu-icon {
         font-size: 2.5em;
-        margin: 10px 0 0;
+        margin: 0;
     }
     ul {
         display: flex;
         
         flex-direction: column;
-        width: 80%;
+        width: 100%;
         margin: 25px 0 0 0; // how close nav is to top
         padding: 0; // moves menu items close to sides
         li {
             list-style-type: none;
             min-width: max-content;
             min-height: 35px;
-            padding-bottom: 20px;
-            font-size: 1.2em;
+            font-size: 1.3em;
+            margin: 10px 0;
             text-align: center;
+            .current {
+                text-decoration: underline;
+            }
+            a:hover {
+                background-color: hsl(207, 94%, 60%);
+                border-radius: 5px;
+                padding: 10px;
+            }
         } // end of li
+        
     } // end of ul
 }
 
@@ -51,8 +75,22 @@ header {
     display: none;
 }
 
+
 main {
     padding: 20px;
+    // max-width: 1200px; // Have to implement max width on title first, and fix dropdown.js to work with it
+    // margin: 0 auto;
+    h2 {
+        // max-width: 960px;
+        background-color: hsla(207, 99%, 58%, 0.9);
+        width: 100%;
+        padding: 10px;
+        color: white;
+    }
+    h2 {
+        margin: 36px -20px 12px;
+    }
+    
 }
 
 footer {
