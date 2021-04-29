@@ -12,7 +12,9 @@ body {
 header {
     
     background:  hsl(207, 99%, 38%);//rgb(7, 78, 145);
-    background: linear-gradient(180deg, hsl(207, 99%, 38%) 0%, rgb(16, 95, 170) 100%);
+    background: linear-gradient(
+        180deg
+        , #51a8f0 0%, #1f8af0 100%);
     margin: 0;
     padding:10px;
     display:flex;
