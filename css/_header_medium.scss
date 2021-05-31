@@ -1,0 +1,37 @@
+header {
+    .content {
+        flex-flow: row;
+        // website logo and words
+        #site-title {
+            display: grid;
+            grid-template-columns: auto auto;
+            gap: 10px;
+            img {
+                display: block;
+                max-width: 140px;
+                object-fit: cover;
+                border-radius: 7px;
+            }
+            h2 {
+                margin: 0;
+                margin-top: 5px;
+            }
+        }
+        // navigation
+        ul {
+            flex-direction: row;
+            justify-content: space-between;
+            
+            margin: 13px auto 0;
+            padding: 0 15px;
+            max-width: 880px;
+            li {
+                font-size: 1.2em;
+                margin: 0 10px;
+            }
+        }
+        // display or hide menu button
+        ul.responsive { display: flex; }
+        #menu-icon { display: none; }
+    }
+}

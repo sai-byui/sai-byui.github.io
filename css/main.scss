@@ -1,8 +1,11 @@
 @import "_small";
+@import "_header_small";
 
 @media only screen and (min-width: 700px) {
     @import "_medium";
+    @import "_header_medium";
 }
 @media only screen and (min-width: 990px) {
     @import "_large";
+    @import "_header_large";
 }

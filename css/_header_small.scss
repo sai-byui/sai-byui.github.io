@@ -1,0 +1,72 @@
+
+header {
+    
+    background: $green; //$main-blue;
+    // background: linear-gradient( 180deg, hsl(207, 84%, 63%) 0%, hsl(209, 87%, 53%) 100%);
+    .content {
+        max-width: $max-width;
+        margin: 0 auto; // 30px;
+        padding: 3px;
+        display:flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        // grid-template-columns: max-content auto;
+        a {
+            text-decoration: none;
+            color: rgb(255, 255, 255);
+            min-width: max-content;
+            margin: 0;
+        }
+        
+        #site-title {
+            display: grid;
+            grid-template-columns: auto auto;
+            gap: 10px;
+            margin: 5px 0 5px 5px;
+            img {
+                display: none;
+            }
+            h2 { // Site Title
+                margin: 0;
+                margin-top: 8px;
+                #touchup {
+                    // font-size: 0.7em;
+                    font-style: italic;
+                }
+            }
+        }
+        #menu-icon {
+            font-size: 2.5em;
+            margin: 0;
+        }
+        // Responsive menu - hides nav when the menu is clicked
+        .responsive {
+            display: none;
+        }
+        ul {
+            display: flex;
+            
+            flex-direction: column;
+            width: 100%;
+            margin: 25px 0 0 0; // how close nav is to top
+            padding: 0; // moves menu items close to sides
+            li {
+                list-style-type: none;
+                min-width: max-content;
+                min-height: 35px;
+                font-size: 1.3em;
+                margin: 10px 0;
+                text-align: center;
+                .current {
+                    text-decoration: underline;
+                }
+                a:hover {
+                    background-color: hsl(207, 94%, 60%);
+                    border-radius: 5px;
+                    padding: 10px;
+                }
+            } // end of li
+            
+        } // end of ul
+    } // end of .content
+}
