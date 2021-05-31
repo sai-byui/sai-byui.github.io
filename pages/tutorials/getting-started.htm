@@ -2,48 +2,35 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,400;0,500;0,700;1,100;1,400;1,500&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../../css/main.css">
-    <script src="../../js/dropdown-menu.js"></script>
+    <!-- <link rel="stylesheet" href="../../css/main.css"> -->
+    <link rel="stylesheet" href="css/main.css">
+    <script src="js/menu.js"></script>
     <title>SAI BYUI</title>
 </head>
 <body>
-    <header>
-        <div class="content">
-            <a href="../../index.htm" id="site-title">
-                <!-- <img src="images/society-icon.png"> -->
-                <h2>SAI <span id=touchup>BYU-I</span></h2>
-            </a>
-            
-            <p id="menu-icon"><a href="#">&Congruent;</a></p>
-            <ul id="navigation"  class="responsive">
-                <li><a href="../../index.htm">Home</a></li>
-                <li><a href="../about/about.htm">About</a></li>
-                <li><a href="../gallery/gallery.htm">Past Projects</a></li>
-                <li><a href="../how-to-join/how-to-join.htm">Join</a></li>
-                <li><a href="../tutorials/getting-started.htm">Tutorials</a></li>
-            </ul>
-        </div>
-    </header>
-    
-    <section id="hero">
-        <div class="content">
-            <div class="textbox">
-                <h2>Tutorials</h2>
-                <h3><i>Currently under construction</i></h3>
-            </div>
-            <div id="hero-img">
-                <img src="images/laptop-code.jpg" alt="laptop with code on screen">
-                <div id="blur"></div>
-            </div>
-        </div>
-    </section>
-    <section id="green-line">   </section>
+
+    <nav id="navigation" class="responsive">
+        <header>
+            <h2>SAI BYUI Home</h2>          
+            <h1>Tutorials</h1>
+            <!-- <input type="text" placeholder="Search"> -->
+        </header>
+        <ul>
+            <li><a href="../../index.htm">Home</a></li>
+            <li><a href="../about/about.htm">About</a></li>
+            <li><a href="../gallery/gallery.htm">Past Projects</a></li>
+            <li><a href="../how-to-join/how-to-join.htm">Join</a></li>
+            <li><a href="../tutorials/getting-started.htm">Tutorials</a></li>
+        </ul>
+    </nav>
 
     <main>
+
+        <a id="menu-icon" href="#" onclick="toggleNav()">&Congruent;</a>
+
         <section>
             <a class="display-img" href="https://ibelong.byui.edu/student_community?club_id=47021&menu=about" target="_blank" rel="noopener noreferrer">
                 <picture>
@@ -58,14 +45,5 @@
         </section>
         
     </main>
-
-    <footer>
-        <p>&copy; Society of Artificial Intelligence 2021</p>
-        <div>
-            <a href="i-belong">
-                <!-- <img src="logo for i-belong" alt=""> -->
-            </a>
-        </div>
-    </footer>
 </body>
 </html>

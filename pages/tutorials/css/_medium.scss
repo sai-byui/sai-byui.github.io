@@ -1,0 +1,17 @@
+body {
+    display: grid;
+    grid-template-columns: $nav-width auto;
+    gap: 10px;
+    grid-template-rows: 100vh;
+
+    main {
+        #menu-icon {
+            display: none;
+        }
+    }
+
+    nav {
+        width: $nav-width;
+        position: relative;
+    }
+}

@@ -1,0 +1,13 @@
+@import "../../../css/colors";
+
+@import "variables";
+
+@import "_small";
+
+@media only screen and (min-width: 700px) {
+    @import "_medium";
+}
+
+@media only screen and (min-width: 990px) {
+    @import "_large";
+}
