@@ -2,48 +2,79 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge"> -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,400;0,500;0,700;1,100;1,400;1,500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../../css/main.css">
     <script src="../../js/dropdown-menu.js"></script>
     <title>SAI BYUI</title>
 </head>
 <body>
     <header>
-        <a href="../../index.htm" id="site-title">
-            <img src="../../images/society-icon.png">
-            <h2>Society of AI: BYU-I</h2>
-        </a>
-        
-        <p id="menu-icon"><a href="#">&Congruent;</a></p>
-        <ul id="navigation"  class="responsive">
-            <li><a href="../../index.htm">Home</a></li>
-            <li><a href="../about/about.htm">About</a></li>
-            <li><a href="../gallery/gallery.htm">Past Projects</a></li>
-            <li><a href="../how-to-join/how-to-join.htm">How to Join</a></li>
-        </ul>
+        <div class="content">
+            <a href="../../index.htm" id="site-title">
+                <!-- <img src="images/society-icon.png"> -->
+                <h2>SAI <span id=touchup>BYU-I</span></h2>
+            </a>
+            
+            <p id="menu-icon"><a href="#">&Congruent;</a></p>
+            <ul id="navigation"  class="responsive">
+                <li><a href="../../index.htm">Home</a></li>
+                <li><a href="../about/about.htm">About</a></li>
+                <li><a href="../gallery/gallery.htm">Past Projects</a></li>
+                <li><a href="../how-to-join/how-to-join.htm">Join</a></li>
+                <li><a href="../tutorials/getting-started.htm">Tutorials</a></li>
+            </ul>
+        </div>
     </header>
     
     <main>
-        <!-- <h1>How to Join</h1> -->
+        <section>
+            <!-- This style of section is displayed as shown below:
+            ####        h2 title
+            ####   text description
+        
+            .    h2 title          ####
+            text description   #### -->
+
+            <!-- display-img: The image that matches with a section of text -->
+            <a class="display-img" href="https://ibelong.byui.edu/student_community?club_id=47021&menu=about" target="_blank" rel="noopener noreferrer">
+                <picture>
+                    <img src="images/i-belong-logo.png" alt="I-Belong screenshot from the phone app">
+                </picture>
+            </a>
+
+            <!-- content: The content that goes with the img. As per the description 
+                 above, this is 'title' and 'text description' -->
+            <div class="content">
+                <h2>I-Belong</h2>
+                <p>Any student who wants to learn about artificial intelligence, machine learning, or programming can join.
+                Find us on <a href="https://ibelong.byui.edu/student_community?club_id=47021&menu=about" target="_blank" rel="noopener noreferrer">I-Belong</a>.</p>
+            </div>
+        </section>
 
         <section>
-            <h2>Welcome!</h2>
-            <p>The Society of Artificial Intelligence at BYU - Idaho welcomes any student who wants to learn about artificial intelligence, machine learning, or programming.</p>
-            <p>To keep up to date with the Society, see our page at <a href="https://ibelong.byui.edu/student_community?club_id=47021&menu=about">I-Belong</a></a></p>
-            <h2>Where Does the Society Meet?</h2>
-            <p>Meetings are held over Microsoft Teams each Thursday at 6. Meetings start the third week of the semester and end a week before the semester ends.</p>
-            <p>Link to <a href="https://teams.microsoft.com/_?lm=deeplink&lmsrc=homePageWeb&cmpid=WebSignIn#/school/conversations/General?threadId=19:6d581630bf0044849d9a27fd412ac026@thread.tacv2&ctx=channel">
-                AI Society Microsoft Teams</a></p>
+            <a class="display-img" href="https://teams.microsoft.com/_?lm=deeplink&lmsrc=homePageWeb&cmpid=WebSignIn#/school/conversations/General?threadId=19:6d581630bf0044849d9a27fd412ac026@thread.tacv2&ctx=channel" target="_blank" rel="noopener noreferrer">
+                <picture>
+                    <img src="images/Microsoft-Teams-Logo.png" alt="Microsoft Teams Logo">
+                </picture>
+            </a>
+            <div class="content">
+                <h2>Where Does the Society Meet?</h2>
+                    <p>Meetings are held over Microsoft Teams each Thursday at 6. Meetings start the third week of the semester and end a week before the semester ends.
+                    Link to <a href="https://teams.microsoft.com/_?lm=deeplink&lmsrc=homePageWeb&cmpid=WebSignIn#/school/conversations/General?threadId=19:6d581630bf0044849d9a27fd412ac026@thread.tacv2&ctx=channel" target="_blank" rel="noopener noreferrer">
+                        Society of AI Microsoft Teams</a>.</p>
+            </div>
         </section>
     </main>
 
     <footer>
         <p>&copy; Society of Artificial Intelligence 2021</p>
         <div>
-            <a href="i-belong">
+            <!-- <a href="https://ibelong.byui.edu/student_community?club_id=47021&menu=about" target="_blank" rel="noopener noreferrer">
                 <!-- <img src="logo for i-belong" alt=""> -->
-            </a>
+            </a> -->
         </div>
     </footer>
 </body>
