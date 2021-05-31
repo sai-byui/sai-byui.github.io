@@ -1,35 +1,87 @@
 header {
-    
-    #site-title {
-        display: grid;
-        grid-template-columns: auto auto;
-        gap: 10px;
-        img {
-            display: block;
-            max-width: 140px;
-            object-fit: cover;
-            border-radius: 7px;
+    .content {
+        flex-flow: row;
+        // website logo and words
+        #site-title {
+            display: grid;
+            grid-template-columns: auto auto;
+            gap: 10px;
+            img {
+                display: block;
+                max-width: 140px;
+                object-fit: cover;
+                border-radius: 7px;
+            }
+            h2 {
+                margin: 0;
+                margin-top: 5px;
+            }
         }
-        h2 {
-            margin: 0;
-            margin-top: 5px;
+        // navigation
+        ul {
+            flex-direction: row;
+            justify-content: space-between;
+            
+            margin: 13px auto 0;
+            padding: 0 15px;
+            max-width: 880px;
+            li {
+                font-size: 1.2em;
+                margin: 0 10px;
+            }
         }
+        // display or hide menu button
+        ul.responsive { display: flex; }
+        #menu-icon { display: none; }
     }
-    #menu-icon { 
-        display: none;
-    }
-    ul {
-        flex-direction: row;
-        justify-content: space-between;
-        
-        margin: 13px auto 0;
-        padding: 0 15px;
-        max-width: 880px;
-        // max-width: 500px;
-        li {
-            font-size: 1.2em;
-            margin: 0 10px;
-        }
-    }
-    ul.responsive { display: flex; }
 }
+
+#hero {
+    .content {
+        display: flex;
+        position: relative;
+        min-height: 400px;
+        .textbox {
+            z-index: 2;
+            background-color: $secondary;
+            padding: 10px;
+            height: max-content;
+            margin-top: 90px;
+        }
+        #hero-img {
+            position: absolute;
+            left: 150px;
+            width: 100%;
+        }
+    }
+}
+
+main {
+    margin: 0 auto;
+    section {
+        margin: 50px auto;
+        display: flex;
+        align-items: center;
+        .content {
+            width: 68%;
+            h2 {
+                margin: 0 auto 20px;
+            }
+        } // end of content
+
+        a.display-img { // wraps around each picture
+            margin: 0 50px;
+            picture {
+                img {
+                    object-fit: cover;
+                    box-shadow: 0 0 5px 5px rgb(51, 51, 51);
+                } // end of img
+            } // end of picture
+        } // end of a
+    } // end of section
+    
+    section:nth-child(2n) {
+        flex-direction: row-reverse;
+        margin-top: 10%;
+    }
+} // end of main

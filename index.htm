@@ -4,80 +4,93 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,400;0,500;0,700;1,100;1,400;1,500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/main.css">
     <script src="js/dropdown-menu.js"></script>
     <title>SAI BYUI</title>
 </head>
 <body>
     <header>
-        <a href="index.htm" id="site-title">
-            <img src="images/society-icon.png">
-            <h2>Society of AI: BYU-I</h2>
-        </a>
-        
-        <p id="menu-icon"><a href="#">&Congruent;</a></p>
-        <ul id="navigation"  class="responsive">
-            <li><a href="index.htm">Home</a></li>
-            <li><a href="pages/about/about.htm">About</a></li>
-            <li><a href="pages/gallery/gallery.htm">Past Projects</a></li>
-            <li><a href="pages/how-to-join/how-to-join.htm">How to Join</a></li>
-        </ul>
+        <div class="content">
+            <a href="index.htm" id="site-title">
+                <!-- <img src="images/society-icon.png"> -->
+                <h2>SAI <span id=touchup>BYU-I</span></h2>
+            </a>
+            
+            <p id="menu-icon"><a href="#">&Congruent;</a></p>
+            <ul id="navigation"  class="responsive">
+                <li><a href="index.htm">Home</a></li>
+                <li><a href="pages/about/about.htm">About</a></li>
+                <li><a href="pages/gallery/gallery.htm">Past Projects</a></li>
+                <li><a href="pages/how-to-join/how-to-join.htm">Join</a></li>
+                <li><a href="pages/tutorials/getting-started.htm">Tutorials</a></li>
+            </ul>
+        </div>
     </header>
     
+    <section id="hero">
+        <div class="content">
+            <div class="textbox">
+                <h2>Society of Artificial Intelligence</h2>
+                <h3>Founded and run by students of BYU - Idaho</h3>
+            </div>
+            <div id="hero-img">
+                <img src="images/laptop-code.jpg" alt="laptop with code on screen">
+                <div id="blur"></div>
+            </div>
+        </div>
+    </section>
+
+    <section id="green-line">
+    </section>
+
     <main>
-        <!-- <h1>Society of Artificial Intelligence - BYU-I</h1> -->
-        <section>
-            <h2>Welcome!</h2>
-            <h3><i>Welcome to the Society of Artificial Intelligence at BYU - Idaho</i></h3>
-            <p>where students can collaborate on projects, learn about artificial intelligence and machine learning, and showcase their projects for other students and teachers to see.</p>
-        </section>
         
         <section>
-            <h2>Contact</h2>
-            <p>For more information, see our page at <a href="https://ibelong.byui.edu/student_community?club_id=47021&menu=about">I-Belong</a> or reach out to brother Burton.</p>
+            <!-- This style of section is displayed as shown below:
+            ####        h2 title
+            ####   text description
+        
+            .    h2 title          ####
+            text description   #### -->
+
+            <!-- display-img: The image that matches with a section of text -->
+            <a class="display-img" href="https://ibelong.byui.edu/student_community?club_id=47021&menu=about" target="_blank" rel="noopener noreferrer">
+                <picture>
+                    <img src="images/i-belong-logo.png" alt="I-Belong screenshot from the phone app">
+                </picture>
+            </a>
+
+            <!-- content: The content that goes with the img. As per the description 
+                 above, this is 'title' and 'text description' -->
+            <div class="content">
+                <h2>I-Belong</h2>
+                <p>Any student who wants to learn about artificial intelligence, machine learning, or programming can join.
+                Find us on <a href="https://ibelong.byui.edu/student_community?club_id=47021&menu=about" target="_blank" rel="noopener noreferrer">I-Belong</a>.</p>
+            </div>
         </section>
 
         <section>
-            <h2>Previous Projects</h2>
-            <h4>Autonomous Remote Control Car</h4>
-            <p>
-                An RC car is made to recognize it's surroundings through a machine learning image regocnition algorithm.
-                A Raspberry Pi 3 is used to control to car. 
-                The source code and the wiki can be found in the <a href="https://github.com/sai-byui/arcc">repository</a>.
-            </p>
-            <h4>Battleship AI </h4>
-            <p>
-                A solid state machine built in C++ to play the game battleship.
-                We currently have 2 versions of an AI developed last semester 
-                and we are looking to improve them and implement other strategies 
-                with the goal of defeting human players. 
-                The code for this project can be found <a href="https://github.com/sai-byui/BattleShipAI">here</a>.
-            </p>
-            <h4>NEO the Learning Softbot</h4>
-            <p>
-                Neo is an agent designed to interact and learn from objects in its environment. 
-                Its framework is built upon concepts in Agent Oriented Programming which allow 
-                its source code to be completely autonomous from the environment 
-                (it can be placed into a new environment without breaking). 
-                The code for this project can be found <a href="https://github.com/sai-byui/NEO_Learning_Softbot">here</a>.
-            </p>
+            <a class="display-img" href="https://teams.microsoft.com/_?lm=deeplink&lmsrc=homePageWeb&cmpid=WebSignIn#/school/conversations/General?threadId=19:6d581630bf0044849d9a27fd412ac026@thread.tacv2&ctx=channel" target="_blank" rel="noopener noreferrer">
+                <picture>
+                    <img src="images/Microsoft-Teams-Logo.png" alt="Microsoft Teams Logo">
+                </picture>
+            </a>
+            <div class="content">
+                <h2>Where Does the Society Meet?</h2>
+                    <p>Meetings are held over Microsoft Teams each Thursday at 6. Meetings start the third week of the semester and end a week before the semester ends.
+                    Link to <a href="https://teams.microsoft.com/_?lm=deeplink&lmsrc=homePageWeb&cmpid=WebSignIn#/school/conversations/General?threadId=19:6d581630bf0044849d9a27fd412ac026@thread.tacv2&ctx=channel" target="_blank" rel="noopener noreferrer">
+                        Society of AI Microsoft Teams</a>.</p>
+            </div>
         </section>
-        
-        <section>
-            <h2>Resources</h2>
-            <ul>
-                <li><p><a href="https://github.com/sai-byui">
-                    Society Github</a></p></li>
-                <li><p><a href="https://teams.microsoft.com/_?lm=deeplink&lmsrc=homePageWeb&cmpid=WebSignIn#/school/conversations/General?threadId=19:6d581630bf0044849d9a27fd412ac026@thread.tacv2&ctx=channel">
-                    Society Microsoft Teams</a></p></li>
-            </ul>
-        </section>
+
     </main>
 
     <footer>
         <p>&copy; Society of Artificial Intelligence 2021</p>
         <div>
-            <a href="i-belong">
+            <a href="https://ibelong.byui.edu/student_community?club_id=47021&menu=about" target="_blank" rel="noopener noreferrer">
                 <!-- <img src="logo for i-belong" alt=""> -->
             </a>
         </div>
