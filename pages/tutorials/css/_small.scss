@@ -39,8 +39,18 @@ body {
         
         // holds search bar
         header {
-            padding: 30px 15px 5px;
+            padding: 5px 15px 5px;
             background-color: $green;
+
+            a {
+                text-decoration: none;
+                color: white;
+                font-size: 1.2em;
+                padding-top: 0;
+                #touchup {
+                    font-style: italic;
+                }
+            }
         } // end header
 
         ul {
