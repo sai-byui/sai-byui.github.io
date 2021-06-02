@@ -8,6 +8,8 @@
     <!-- <link rel="stylesheet" href="../../css/main.css"> -->
     <link rel="stylesheet" href="css/main.css">
     <script src="js/menu.js"></script>
+    <!-- Import markdown parser. For details, see https://zerodevx.github.io/zero-md/installation/-->
+    <script type="module" src="https://cdn.jsdelivr.net/gh/zerodevx/zero-md@2/dist/zero-md.min.js"></script>
     <title>SAI BYUI</title>
 </head>
 <body>
@@ -20,12 +22,8 @@
             <h1>Tutorials</h1>
             <!-- <input type="text" placeholder="Search"> -->
         </header>
-        <ul>
+        <ul id="links">
             <li><a href="../../index.htm">Home</a></li>
-            <li><a href="../about/about.htm">About</a></li>
-            <li><a href="../gallery/gallery.htm">Past Projects</a></li>
-            <li><a href="../how-to-join/how-to-join.htm">Join</a></li>
-            <li><a href="../tutorials/getting-started.htm">Tutorials</a></li>
         </ul>
     </nav>
 
@@ -34,18 +32,11 @@
         <a id="menu-icon" href="#" onclick="toggleNav()">&Congruent;</a>
 
         <section>
-            <a class="display-img" href="https://ibelong.byui.edu/student_community?club_id=47021&menu=about" target="_blank" rel="noopener noreferrer">
-                <picture>
-                    <!-- <img src="images/i-belong-logo.png" alt="I-Belong screenshot from the phone app"> -->
-                </picture>
-            </a>
-
-            <div class="content">
-                <h2>Under Construction</h2>
-                <p>This page is under construction. It will include a list of tutorials along with content custom written for the society. 
-            </div>
+            <!-- Change "src" to the path to the markdown file to be displayed -->
+            <zero-md id="markdown-display" class="markdown" src="../../tutorials/readme.md"> </zero-md> 
         </section>
         
     </main>
+    <script src="js/load-tutorials.js"></script>
 </body>
 </html>

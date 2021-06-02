@@ -14,8 +14,11 @@ body {
         max-width: 100%;
     }
     main {
-        padding-top: 30px;
+        padding: 30px 15px;
 
+        .markdown {
+            z-index: -1;
+        }
         #menu-icon { // treat this as an a link
             color: $dark-green;
             font-size: 2.5em;
