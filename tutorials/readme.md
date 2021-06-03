@@ -1,2 +1,0 @@
-## Tutorials Page
-Unfortunately, this page is __under construction__. However, tutorials will be added as time goes on. 
