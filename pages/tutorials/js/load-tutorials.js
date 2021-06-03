@@ -37,10 +37,14 @@ fetch(githubAPI)
  * jsonTree:    The github tree that holds file/folder data
  * folderURL:   The url of the folder containing tutorials
  *                      ex. sai-byui.github.io/pages/tutorials/tutorials
+ * parentTitleEl: The li containing parentEl. If this is set to an element,
+ *                      it will be changed to represent the first item in the 
+ *                      directory. a.k.a. item 0.
  **************************************************/
-function addPages(parentEl, jsonTree, folderURL) {
-    
+function addPages(parentEl, jsonTree, folderURL, parentTitleEl=false) {
+    // console.log("Tree : ", jsonTree)
     // get list of files/branches in tree
+    let index = 0;
     for (branch of jsonTree) {
         // console.log(branch);
 
@@ -60,27 +64,39 @@ function addPages(parentEl, jsonTree, folderURL) {
             // for example, replace "About README.md files.md" with "About README.md files"
             link.innerText = branch.path.substr(0,branch.path.lastIndexOf('.md'));
 
-            let li = document.createElement("li");
-            li.appendChild(link)
-            parentEl.appendChild(li);
+            let li
+            if (parentTitleEl && index == 0) {
+                // treat the parent as the first list item
+                parentTitleEl.append(link)
+                parentTitleEl.append(parentEl)
+            }
+            else {
+                li = document.createElement("li");
+                li.appendChild(link);
+                parentEl.appendChild(li);
+            }
+            ++index;
         }
         // else, add a new element for and recursively go deeper
         // a folder will display contained items as indented. foldet names with the same prefix as an md
         // file will be displayed below that item
-        // TODO: If a readme has the same name as a folder, make that a heading to the next subsection, which contains the items in the folder
         else if (branch.type == "tree") {
+            let nextLayerParentTitle = document.createElement("li")
             let nextLayerParent = document.createElement("ul");
+
+            // Attach new parent to a list item
+            parentEl.appendChild(nextLayerParentTitle);
+            // nextLayerParentTitle.appendChild(nextLayerParent);
             
             // next layer folder url
-            let nextFolderURL = fileSource + "/" + branch.path  + "/";
+            let nextFolderURL = fileSource + "/";
             fetch(branch.url)
             .then(response => response.json())
             .then(data => {
-                addPages(nextLayerParent, data.trees, nextFolderURL);
+                addPages(nextLayerParent, data.tree, nextFolderURL, nextLayerParentTitle);
             })
         }
-
-    }
+    } // end of for (branch of jsonTree)
 }
 
 function displayMD(linkToFile) {

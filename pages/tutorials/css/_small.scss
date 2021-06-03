@@ -62,6 +62,12 @@ body {
             li {
                 padding: 6px;
                 list-style-type: none;
+                ul {
+                        margin-top: 3px;
+                        li {
+                            margin-top: 0px;
+                        }
+                }
                 a {
                     padding: 6px;
                     color: white;
