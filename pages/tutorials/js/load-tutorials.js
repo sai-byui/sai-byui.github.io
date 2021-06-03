@@ -68,7 +68,6 @@ function addPages(parentEl, jsonTree, folderURL) {
         // a folder will display contained items as indented. foldet names with the same prefix as an md
         // file will be displayed below that item
         // TODO: If a readme has the same name as a folder, make that a heading to the next subsection, which contains the items in the folder
-        //          
         else if (branch.type == "tree") {
             let nextLayerParent = document.createElement("ul");
             
