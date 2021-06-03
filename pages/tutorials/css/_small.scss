@@ -16,9 +16,9 @@ body {
     main {
         padding: 30px 15px;
 
-        .markdown {
-            z-index: -1;
-        }
+        // .markdown {
+        //     z-index: -1;
+        // }
         #menu-icon { // treat this as an a link
             color: $dark-green;
             font-size: 2.5em;
@@ -32,6 +32,7 @@ body {
     } // end main
 
     nav {
+        z-index: 5;
         height: 100vh;
         background-color: $primary;
         width: 0px;
