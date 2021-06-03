@@ -49,6 +49,7 @@ function addPages(parentEl, jsonTree, folderURL) {
         // if it's a file (blob), add a link to it
         if (branch.type == "blob") {
             let link = document.createElement("a")
+            link.href = '#' // makes the mouse look like it'll click
 
             // console.log(fileSource);
             link.addEventListener("click", function() {
