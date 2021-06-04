@@ -1,8 +1,9 @@
 # Society of Artificial Intelligence - BYU-I
 
 ### TODO
-Add Basic pages  
-Add Tutorials  
+- [ ] Add presidency to About Us
+- [ ] Add more tutorials  
+- [ ] Add content to home page
 
 ### Resources
 sai-byui.github.io
