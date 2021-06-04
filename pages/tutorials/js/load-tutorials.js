@@ -51,7 +51,7 @@ function addPages(parentEl, jsonTree, folderURL, parentTitleEl=false) {
         let fileSource = folderURL + "/"  + branch.path
 
         // if it's a file (blob), add a link to it
-        if (branch.type == "blob") {
+        if (branch.type == "blob" && branch.path.includes(".md")) {
             let link = document.createElement("a")
             link.href = '#' // makes the mouse look like it'll click
 
@@ -97,6 +97,12 @@ function addPages(parentEl, jsonTree, folderURL, parentTitleEl=false) {
             })
         }
     } // end of for (branch of jsonTree)
+    if (parentEl.innerHTML == '') {
+        parentEl.remove();
+    }
+    if (parentTitleEl.innerHTML == '') {
+        parentTitleEl.remove();
+    }
 }
 
 function displayMD(linkToFile) {
