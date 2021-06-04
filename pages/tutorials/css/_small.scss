@@ -13,12 +13,17 @@ body {
     img { // just keep images from accidentally overflowing
         max-width: 100%;
     }
+    // main::-webkit-scrollbar {
+    //     display: none;
+    // }
     main {
         padding: 30px 15px;
+        overflow-y: scroll;
 
-        // .markdown {
-        //     z-index: -1;
-        // }
+        /* Hide scrollbar */
+        -ms-overflow-style: none;  /* IE and Edge */
+        scrollbar-width: none;  /* Firefox */
+
         #menu-icon { // treat this as an a link
             color: $dark-green;
             font-size: 2.5em;
@@ -31,20 +36,29 @@ body {
         } // end #menu-icon
     } // end main
 
+    nav::-webkit-scrollbar {
+        display: none;
+    }
     nav {
         z-index: 5;
         height: 100vh;
         background-color: $primary;
         width: 0px;
         color: white;
-        position: absolute;
+        position:absolute;
         overflow-x: hidden;
         transition: width 0.5s;
+        overflow-y: scroll;
+
+        /* Hide scrollbar */
+        -ms-overflow-style: none;  /* IE and Edge */
+        scrollbar-width: none;  /* Firefox */
         
-        // holds search bar
+        /* Search Bar contained here */
         header {
             padding: 5px 15px 5px;
             background-color: $green;
+            min-width: max-content;
 
             a {
                 text-decoration: none;
