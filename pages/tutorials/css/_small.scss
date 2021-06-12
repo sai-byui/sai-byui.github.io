@@ -71,13 +71,15 @@ body {
             }
         } // end header
 
-        ul {
+        ul { // This is the start of the list of tutorials
             padding: 0;
+            margin: 5px 0 0;
             li {
                 padding: 6px;
                 list-style-type: none;
                 ul {
-                        margin-top: 3px;
+                    background-color: hsl(0, 0%, 35%);
+                    margin: 6px -5px 0;
                         li {
                             margin-top: 0px;
                         }

@@ -42,11 +42,9 @@ fetch(githubAPI)
  *                      directory. a.k.a. item 0.
  **************************************************/
 function addPages(parentEl, jsonTree, folderURL, parentTitleEl=false) {
-    // console.log("Tree : ", jsonTree)
     // get list of files/branches in tree
     let index = 0;
     for (branch of jsonTree) {
-        // console.log(branch);
 
         let fileSource = folderURL + "/"  + branch.path
 
@@ -55,9 +53,14 @@ function addPages(parentEl, jsonTree, folderURL, parentTitleEl=false) {
             let link = document.createElement("a")
             link.href = '#' // makes the mouse look like it'll click
 
-            // console.log(fileSource);
             link.addEventListener("click", function() {
                 displayMD(fileSource);
+                // TODO: Currently not working because 'a' elements are not full width
+                // for (item of document.getElementsByClassName("currently_selected")) {
+                //     item.classList.remove("currently_selected");
+                // }
+                // this.classList.add("currently_selected");
+
             });
 
             // remove .md file extension without removing it from actual names
@@ -86,7 +89,6 @@ function addPages(parentEl, jsonTree, folderURL, parentTitleEl=false) {
 
             // Attach new parent to a list item
             parentEl.appendChild(nextLayerParentTitle);
-            // nextLayerParentTitle.appendChild(nextLayerParent);
             
             // next layer folder url
             let nextFolderURL = fileSource + "/";
