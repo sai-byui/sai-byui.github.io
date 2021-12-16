@@ -1,0 +1,46 @@
+section.photo-line {
+    .photo-box {
+        margin: 0 auto 30px auto;
+        padding: 15px;
+        max-width: max-content;
+        picture {
+            margin: 0 auto;
+            height: 500px;
+        }
+        h3 {
+            margin-bottom: 0.3em;
+        }
+    }
+}
+
+// wrap normally
+@media only screen and (min-width: 700px) {
+    section.photo-line {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: baseline;
+        margin-top: 0;
+        .photo-box {
+            width: 250px;
+            picture {
+                height: 300px;
+            }
+        }
+    }
+}
+
+// wrap 3 then 2
+@media only screen and (min-width: 1050px) {
+    section.photo-line {
+        .photo-box {
+            
+        } 
+    }
+}
+
+// don't wrap any images: a straight line
+@media only screen and (min-width: 1260px) {
+    section.photo-line {
+        flex-wrap: nowrap;
+    }
+}

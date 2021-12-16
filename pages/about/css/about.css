@@ -1,0 +1,44 @@
+section.photo-line .photo-box {
+  margin: 0 auto 30px auto;
+  padding: 15px;
+  max-width: -webkit-max-content;
+  max-width: -moz-max-content;
+  max-width: max-content;
+}
+
+section.photo-line .photo-box picture {
+  margin: 0 auto;
+  height: 500px;
+}
+
+section.photo-line .photo-box h3 {
+  margin-bottom: 0.3em;
+}
+
+@media only screen and (min-width: 700px) {
+  section.photo-line {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
+    margin-top: 0;
+  }
+  section.photo-line .photo-box {
+    width: 250px;
+  }
+  section.photo-line .photo-box picture {
+    height: 300px;
+  }
+}
+
+@media only screen and (min-width: 1260px) {
+  section.photo-line {
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+  }
+}
+/*# sourceMappingURL=about.css.map */
