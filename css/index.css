@@ -1,1 +1,1 @@
-main section:nth-child(2n){flex-direction:row-reverse}/*# sourceMappingURL=index.css.map */
+main section{margin:50px auto;align-items:center}main section:nth-child(2n){flex-direction:row-reverse}/*# sourceMappingURL=index.css.map */

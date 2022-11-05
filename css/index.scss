@@ -1,4 +1,9 @@
 main {
+    section {
+        margin: 50px auto;
+        align-items: center;
+    }
+
     section:nth-child(2n) {
         flex-direction: row-reverse;
     }
