@@ -41,8 +41,4 @@ main {
             } // end of picture
         } // end of a
     } // end of section
-    
-    section:nth-child(2n) {
-        flex-direction: row-reverse;
-    }
 } // end of main
