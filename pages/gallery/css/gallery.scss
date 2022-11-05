@@ -1,5 +1,28 @@
 .project {
+    flex-wrap:wrap;
     border-radius: 6px;
     border: solid gray 3px;
     padding: 3px;
+
+    .content {
+        margin-right: 0;
+    }
+
+    img {
+        height: auto;
+        padding: 10px;
+        border-radius: 20px;
+    }
+}
+
+@media only screen and (min-width: 700px) {
+    .project {
+        .content {
+            width: 58%;
+        }
+        img {
+            max-width: 40%;
+            margin: 5px 1% 5px 1%;
+        }
+    }
 }

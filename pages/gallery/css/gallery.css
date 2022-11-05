@@ -1,1 +1,1 @@
-.project{border-radius:6px;border:solid gray 3px;padding:3px}/*# sourceMappingURL=gallery.css.map */
+.project{flex-wrap:wrap;border-radius:6px;border:solid gray 3px;padding:3px}.project .content{margin-right:0}.project img{height:auto;padding:10px;border-radius:20px}@media only screen and (min-width: 700px){.project .content{width:58%}.project img{max-width:40%;margin:5px 1% 5px 1%}}/*# sourceMappingURL=gallery.css.map */
